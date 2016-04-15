@@ -1,0 +1,20 @@
+@charset "gb2312";
+/* CSS Document */
+
+.xtgg{ width:100%; height:auto; margin-top:25px;}
+.xtgg dt{ width:138px; height:60px; line-height:44px; text-align:center; color:#f60; font-size:24px; font-weight:bold; margin-left:30px; background:url(xxgg_bt.png) no-repeat;}
+.xtgg dd{ width:100%; background:url(img_bg.png) repeat-y 97px 0; overflow:hidden;min-width: 900px;}
+.left_nr{ width:22%; height:100%; float:left; overflow:hidden;}
+.left_nr img{margin-left:88px;}
+.time1,.timen{ width:76px; height:76px; line-height:76px; text-align:center; margin:5px auto 0 auto; background:url(time_bg.jpg) no-repeat; font-size:14px; color:#f60; font-weight:bold; }
+.time1,.timen{margin-left:60px;}
+.timen{ background:url(timen_bg.jpg) no-repeat;}
+.right_nr{ width:78%; height:auto; overflow:hidden; float:left;}
+.gg_bt{ height:29px; line-height:29px; padding:2px 10px; font-size:16px; color:#f60; border:1px solid #feb280; border-radius:4px;-moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.nr_img{ padding-left:20px;}
+.nr_img img{ margin-right:15px;}
+.right_nr p{ color:#333; font-size:14px; line-height:20px; margin-bottom:20px;}
+.mt_50{ margin-top:50px;}
+.form_box{ height:100%; overflow-y:auto;}
+.xtgg .timeyear{width:100%; background:url(time_year.jpg) repeat-y 97px 0;overflow:hidden; padding:30px 0;}
+/*html,body,head,title,meta,div,ul,li,img,span,p,h2,h1,h3,dl,dt,dd,a,input,table{padding:0;margin:0;}*/

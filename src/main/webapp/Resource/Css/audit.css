@@ -1,0 +1,26 @@
+﻿
+*{ padding:0; margin:0;}
+ol,ul{ list-style:none;}
+body{ font-size:12px; }
+a { font-size: 12px; }
+.top ul li { float: left; height: 30px; width: 208px; display: block; line-height: 30px; text-align: center; background-image: url(../Image/_r1_c1.jpg); background-repeat: no-repeat; background-position: right bottom; }
+.top ul li:hover,.top ul li.on { background-image: url(../Image/_r1_c1.jpg); background-repeat: no-repeat; background-position: left top; color: #FFF; }
+.top ul { overflow: hidden; }
+h4 { font-size: 16px; padding-top: 20px; padding-bottom: 10px; color: #333; margin-left: 14px; }
+.kehu ,.ziliao{ background-color: #DDD; margin-right: 14px; margin-left: 14px; }
+.kehu tr td ,.ziliao tr td{ text-align: center; background-color: #FFF; line-height: 30px; }
+.ziliao tr td { line-height: 60px; height: 60px; }
+.butie { margin-top: 20px; border: 1px solid #F00; padding: 30px; margin-right: 14px; margin-left: 14px; }
+.butie input { margin-right: 10px; margin-left: 10px; width: 126px; line-height: 24px; height: 24px; }
+.butie span { margin-left: 100px; color: #F00; }
+.anniu { margin-top: 20px; width: 330px; overflow: hidden; clip: rect(auto,auto,auto,auto); margin-right: auto; margin-left: auto; }
+.anniu a { line-height: 30px; display: block; float: left; height: 30px; width: 120px; background-color: #c00; text-align: center; color: white; text-decoration: none; margin-right: 20px; margin-left: 20px; }
+/*.anniu a:hover{ background-color: #39F; color: #FFF; }*/
+.sure { width: 400px; text-align: center; font-size: 16px; color: #333; border: 1px solid #CCC; padding-top: 40px; margin-top: 20px; margin-right: auto; margin-left: auto; padding-bottom: 20px; background-color: #FFF; }
+.no { width: 500px; margin-right: auto; margin-left: auto; padding-bottom: 20px; border: 1px solid #CCC; margin-top: 20px; position: relative; }
+.no .close { position: absolute; top: -4px; right: -4px; -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; display: block; height: 16px; width: 16px; background-color: #6CF; text-decoration: none; line-height: 16px; color: #FFF; text-align: center; }
+.no h4 { background-color: #EFEFEF; margin: 0px; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCC; }
+.no p { line-height: 30px; padding-left: 12px; }
+.no textarea { width: 440px; margin-left: 30px; height: 100px; overflow: hidden; overflow-y:scroll;}
+.tixing h3{ font-size:24px; color: #333; padding-top: 10px; padding-bottom: 20px; }
+.tixing p{ color:#666; line-height:22px; width:310px; }

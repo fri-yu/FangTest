@@ -1,0 +1,25 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.ershou_nav{ height:42px; background:#c00; width:100%; line-height:42px; color:#fff; font-family:'Microsoft Yahei'; font-size:14px;}
+.logo_nav img{ height:31px;}
+.logo_nav{ height:42px; padding:0px 22px;}
+.tip_nav{ font-size:18px;}
+.user_nav{ background: url(../Image/newHouse_bg.png) -4px 8px no-repeat; padding:0px 10px 0px 28px;}
+.juese_nav span{background: url(../Image/newHouse_bg.png) -4px -168px no-repeat; padding-left:15px; padding-top:12px; line-height:30px; }
+.juese_nav{ text-align:center;  width:162px; position:relative;}
+.juese_hover{ position:absolute; border:1px solid #eaeaea; border-top:none; display:none; top:42px; left:0px;}
+.juese_nav:hover{ background:#9b0000; cursor:pointer;}
+.juese_nav b{background: url(../Image/newHouse_bg.png) -4px -128px no-repeat; padding-left:15px; padding-top:12px; line-height:30px; }
+.juese_nav:hover .jian_nav{ display:block;}
+.juese_nav:hover .juese_hover{ display:block;z-index:9999;background:#fff}
+.jian_nav{ position:absolute; top:33px; width:17px; height:9px; right:20px; overflow:hidden; background:url(../Image/border_sanjiao.jpg) no-repeat;display:none;}
+.juese_hover li{ color:#333; font-size:12px; text-align:left; padding-left:30px; line-height:30px; height:30px; background:url(../Image/newHouse_bg.png) 4px -105px no-repeat;}
+.juese_hover li a{color:#666; }
+.juese_hover li a:hover {color:#c00; text-decoration:none;}
+.juese_hover li:hover{ background: #f4f4f4 url(../Image/newHouse_bg.png) 4px -216px no-repeat; display:block; }
+.user_nav3{ margin-left:20px;background: url(../Image/clockMini.png) 5px 13px no-repeat; padding-right:40px;}
+.user_nav2{ margin-left:20px;background: url(../Image/newHouse_bg.png) -4px -24px no-repeat;}
+.user_nav1{ margin-left:20px;background: url(../Image/newHouse_bg.png) 2px -62px no-repeat; padding-right:40px;}
+.user_nav4{ margin-left:20px;background: url(../Image/changepassword.png) 7px 13px no-repeat; padding-right:40px;}
+.tip_nav a,.user_nav a{ color:#fff; cursor:pointer;}
+.tip_nav a:hover,.user_nav a:hover{ text-decoration:none;}

@@ -1,0 +1,43 @@
+.hblcMainB, .hblcMainBTL, .hblcMainBB { border-width: 1px; border-style: solid; }
+
+body { width: 100%; overflow: scroll; }
+
+.hblcMain { width: 96%; margin: 0 auto; }
+
+.return { color: #999; font-size: 14px; }
+.return:hover { text-decoration: none; }
+
+.hblcMainB { border-color: #e5e5e5; }
+
+.hblcMainBT { position: relative; }
+
+.hblcMainBTL { float: left; width: 16%; height: 166px; border-color: transparent; border-right-color: #e5e5e5; }
+.hblcMainBTL dt { height: 30px; line-height: 30px; font-size: 28px; color: #f66; font-weight: bold; text-align: center; margin-top: 53px; }
+.hblcMainBTL dd { font-size: 16px; font-family: Arial; color: #f66; text-align: center; margin-top: 6px; }
+
+.hblcMainBTR { position: absolute; left: 16%; right: 0; top: 0; bottom: 0; overflow: hidden; }
+
+.progress { width: 90%; margin: 25px auto 0; position: relative; }
+.progress div { float: left; }
+.progress div dt { width: 18px; height: 18px; background: url(../Image/grayCircle.png) no-repeat; position: absolute; top: -7px; z-index: 2; }
+.progress div dd { text-align: center; margin-top: 15px; font-size: 14px; color: #999; }
+.progress div.on dt { background: url(../Image/remCircle.png) no-repeat; }
+
+.dotBegin { position: absolute; width: 25%; left: -12.3%; z-index: 5; }
+.dotBegin dt { left: 47%; }
+
+.dot { width: 25%; height: 5px; background-color: #eee; position: relative; }
+.dot dl { width: 100%; }
+.dot dl dt { right: -9px; }
+.dot dl dd { position: absolute; width: 100%; left: 50%; }
+.dot dl dd span { font-size: 12px; }
+
+.chooseBtn { padding-left: 4.3%; position: absolute; bottom: 25px; }
+
+.chooseBtn a { display: block; float: left; margin-right: 36px; height: 18px; line-height: 18px; padding-left: 27px; background: url(../Image/grayCircle.png) no-repeat left center; font-size: 14px; color: #999; }
+.chooseBtn a:hover { text-decoration: none; }
+.chooseBtn a.on { background-image: url(../Image/orangeCircle.png); }
+
+.dot.on { background-color: #f66; z-index: 5; }
+
+.hblcMainBB { padding: 20px 30px; border-color: transparent; border-top-color: #e5e5e5; font-size: 14px; color: #999; line-height: 24px; }

@@ -1,0 +1,27 @@
+﻿@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-09-08 17:15:50
+ * @version $Id$
+ */
+	.hongbao_list{width:910px; background: #fff;}
+	.hongbao_list p{ height:42px; line-height: 42px; border-bottom: 2px solid #e4e4e4; padding-left:20px; font-size: 18px; color:#333;}
+	.hongbao_list .hongbao_list_mid{width:900px; padding-left: 10px;}
+	.hongbao_list_mid ul{width:900px; overflow: hidden; padding-top:22px;}
+	.hongbao_list_mid ul li{ width:450px; float:left; margin-bottom:20px; height:135px;}
+	.hongbao_list_midL dt{ float:left; width:97px; color:#e83532;height:118px; position: relative; top:35px;}
+	.hongbao_list_midL dt span{ display: block; font-size: 14px; text-align: center;}
+	.hongbao_list_midL dt em{ display: block; font-size: 18px; text-align: center;}
+	.hongbao_list_midL dd{ float:left;width:165px;}
+	.hongbao_list_midL dd strong{ display: block; height:60px; line-height: 60px; text-align: center; color:#fff;font-size: 16px;font-weight: normal;}
+	.hongbao_list_midL dd strong b{color:#fff;font-weight: normal; font-size: 12px; text-align: center;display: block;line-height: 25px; margin-top:5px;}
+	.hongbao_list_midL dd strong i{ color:#ffcc00; font-size: 12px; font-style: normal;display: block;line-height: 22px;}
+	.hongbao_list_midL dd strong i.yuyuefalse{line-height: 50px;}
+	.hongbao_list_mid ul li .hongbao_list_midR{ float:left; width:174px; height:135px; border-left:1px dashed #cccccc; text-align: center;}
+	.hongbao_list_midR a{display: block; text-align: center; width:100px; height:48px; line-height: 48px; border:1px solid #999999; color:#999999; font-size: 18px; border-radius: 6px; margin-left:22px; *margin-left:0;margin-top:38px;cursor:default;}
+	.hongbao_list_midR a:hover{text-decoration: none;}
+	.hongbao_list_midR a.anther{border:1px solid #df3031; color:#df3031;cursor:default; cursor: pointer;}
+	.hongbao_list_midR span{ display: block; color:#999999; font-size:12px; margin-top:20px; margin-bottom:18px;}
+
+	.hongbao_list .hongbao_list_boot{width:890px; padding-left: 10px; height:400px; line-height: 400px; text-align: center; font-size: 18px; color:#df3031;}
