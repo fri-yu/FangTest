@@ -52,3 +52,4 @@ Temporary Items
 target/
 .settings/
 .settings/org.eclipse.core.resources.prefs
+.settings
