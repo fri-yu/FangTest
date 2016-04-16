@@ -39,7 +39,7 @@ public class AuthenticationFilter implements Filter {
 				.equals(hostName + loginPageUrlPart))) {
 
 			HttpSession session = ((HttpServletRequest) request).getSession();
-			// System.out.println(session);
+			 System.out.println(session);
 			// System.out.println(session.getAttribute("userName") == null);
 			if (session.getAttribute("userName") == null) {
 				((HttpServletResponse) response).sendRedirect(hostName
