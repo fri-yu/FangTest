@@ -57,3 +57,6 @@ target
 /target
 /target
 target
+.myeclipse
+.settings
+/.classpath
