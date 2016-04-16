@@ -60,3 +60,4 @@ target
 .myeclipse
 .settings
 /.classpath
+/src/main/webapp/Resource
