@@ -16,8 +16,10 @@ public class LoginEnterIn {
 
 	public String getEmail() {
 		String temp = (email == null || email.isEmpty()) ? "" : email;
+		System.out.println("get email temp:" + temp);
 		try {
 			temp = URLDecoder.decode(temp.split("@")[1], "utf-8");
+			System.out.println("get email temp2:" + temp);
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();
@@ -25,11 +27,16 @@ public class LoginEnterIn {
 		}
 		temp = SlAntiXss.getSafeText(temp);
 		temp = SlDatabase.GetSafetySql(temp);
+
 		return DecodeBase64("utf-8", temp);
 	}
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(DecodeBase64("utf-8", "5pivZmFuZy5jb20="));
 	}
 
 	public String getPassword() {
@@ -43,6 +50,7 @@ public class LoginEnterIn {
 		}
 		temp = SlAntiXss.getSafeText(temp);
 		temp = SlDatabase.GetSafetySql(temp);
+
 		return DecodeBase64("utf-8", temp);
 	}
 
@@ -79,9 +87,9 @@ public class LoginEnterIn {
 		}
 		return result;
 	}
+
 	@Override
-	public String toString()
-	{
-		return "password:"+password+"___email:"+email;
+	public String toString() {
+		return "password:" + password + "___email:" + email;
 	}
 }
