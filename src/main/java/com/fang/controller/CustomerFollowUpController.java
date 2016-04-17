@@ -50,7 +50,7 @@ public class CustomerFollowUpController {
 		m1.HuxingInfo = "HuxingInfo2";
 		AjaxJsonBean<model1> m = new AjaxJsonBean<model1>();
 		m.Message = "Success";
-		m.rowsCount = 1;
+		m.RowsCount = 1;
 		m.Rows = new ArrayList<model1>();
 		m.Rows.add(m1);
 		System.out.println(JSON.toJSON(m));
