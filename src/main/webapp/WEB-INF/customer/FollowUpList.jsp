@@ -717,7 +717,7 @@ em {
 	<article class="loadingmask" style="background-color: rgba(238, 238, 238, 0.4)"></article>
 	
     <span class="loadImg">
-        <img style="width:20px;margin-bottom:10px" src="<%=scriptPath %>Resource/image/loading.gif" alt="" title="" /><br />
+        <img style="width:20px;margin-bottom:10px" src="<%=scriptPath %>Image/loading.gif" alt="" title="" /><br />
         <span id="loadingMsg">正在查询，请稍后......</span>
     </span>
 	<script type="text/javascript" id="readyFuntion">
@@ -729,7 +729,7 @@ em {
 
 			$("select").addClass("temp_Select");
 			//$("#btnExport").click(exportExcel);
-			$("#btnSearch").click(search);
+
 			$('#renGouBtnExport').click(function() {
 				//判断是否选取时间段
 				if ($("#dtBeginaudit").val() != "" && $("#dtEndaudit").val() != "") {
@@ -769,7 +769,7 @@ em {
 			    $("#" + model.verifyType).show();
 			    $("#" + model.verifyType).find("[value=" + model.verifyStatus + "]").first().attr("selected", "selected");
 			}*/
-			//search();
+			search();
 			$('#mediumflag').change(function() {
 				checkCustomerSource($(this).find(':selected').val());
 
@@ -895,7 +895,6 @@ em {
 					//$(".sldatatablefix tbody").empty();
 					$(".sldatatable .sldatatablerow").remove();
 					if (result != null && result.Message == "Success") {
-
 						ResetSearch(result.RowsCount);
 						$('#table-javascript').bootstrapTable('destroy').bootstrapTable({
 							data : result.Rows,
