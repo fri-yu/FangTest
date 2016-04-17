@@ -1,6 +1,7 @@
 package com.fang.filter;
 
 import java.io.IOException;
+import java.net.URLDecoder;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -30,24 +31,27 @@ public class AuthenticationFilter implements Filter {
 		// System.out.println(" AuthenticationFilter run");
 		// System.out.println(((HttpServletRequest) request).getRequestURI()
 		// .toLowerCase());
+		//登录验证页面
 		if ((((HttpServletRequest) request).getRequestURI().toString()
 				.equals(hostName + loginEnter))) {
 			chain.doFilter(request, response);
 			return;
 		}
+		//非登录验证页面，非登录页面
 		if (!(((HttpServletRequest) request).getRequestURI().toString()
 				.equals(hostName + loginPageUrlPart))) {
 
 			HttpSession session = ((HttpServletRequest) request).getSession();
-			 System.out.println(session);
+			 //System.out.println(session);
 			// System.out.println(session.getAttribute("userName") == null);
 			if (session.getAttribute("userName") == null) {
 				((HttpServletResponse) response).sendRedirect(hostName
 						+ loginPageUrlPart);
 				return;
 			} else {
+				System.out.println(((HttpServletRequest) request).getRequestURI().toString());
 				System.out.println("doFilter--userName:"
-						+ session.getAttribute("userName"));
+						+ URLDecoder.decode(session.getAttribute("userName").toString(),"UTF-8"));
 			}
 		}
 		chain.doFilter(request, response);
