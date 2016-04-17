@@ -3,67 +3,66 @@
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
-			+ path;
+			+ path+"/";
+	String scriptPath=basePath+Config.ScriptPath;
 %>
-<%
-	String version = Config.Version;
-%>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>-登录</title>
-<link rel="icon" href="<%=Config.ScriptPath%>Image/Logo.ico?Version=<%=Config.Version%>" type="image/x-icon" />
-<link rel="shortcut icon" href="<%=Config.ScriptPath%>Image/Logo.ico?Version=<%=Config.Version%>" type="image/x-icon" />
-<link href="<%=Config.ScriptPath%>Css/style.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.js?Version=<%=Config.Version%>"></script>
+<link rel="icon" href="<%=scriptPath%>Image/Logo.ico?Version=<%=Config.Version%>" type="image/x-icon" />
+<link rel="shortcut icon" href="<%=scriptPath%>Image/Logo.ico?Version=<%=Config.Version%>" type="image/x-icon" />
+<link href="<%=scriptPath%>Css/style.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.js?Version=<%=Config.Version%>"></script>
 <script type="text/javascript"
-	src="<%=Config.ScriptPath%>Script/jquery.busybox/jquery.busybox.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.bt.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.metadata.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.excanvas.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.bgiframe.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.string.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.hotkeys.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.maskedinput.js?Version=<%=Config.Version%>"></script>
-<link href="<%=Config.ScriptPath%>Script/jquery.ui/jquery.ui.css?Version=<%=Config.Version%>" type="text/css"
+	src="<%=scriptPath%>Script/jquery.busybox/jquery.busybox.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.bt.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.metadata.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.excanvas.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.bgiframe.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.string.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.hotkeys.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.maskedinput.js?Version=<%=Config.Version%>"></script>
+<link href="<%=scriptPath%>Script/jquery.ui/jquery.ui.css?Version=<%=Config.Version%>" type="text/css"
 	rel="stylesheet" />
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.ui/jquery.ui.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.contextmenu.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.guid.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.timer.js?Version=<%=Config.Version%>"></script>
-<link href="<%=Config.ScriptPath%>Script/jquery.layout/jquery.layout.css?Version=<%=Config.Version%>" type="text/css"
-	rel="stylesheet" />
-<script type="text/javascript"
-	src="<%=Config.ScriptPath%>Script/jquery.layout/jquery.layout.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.cookie.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.hoverintent.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.contextmenu.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.float.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.swfobject.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript"
-	src="<%=Config.ScriptPath%>Script/jquery.tinymce/jquery.tinymce.js?Version=<%=Config.Version%>"></script>
-<link href="<%=Config.ScriptPath%>Script/dhtmlxtree/dhtmlxtree.css?Version=<%=Config.Version%>" type="text/css"
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.ui/jquery.ui.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.contextmenu.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.guid.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.timer.js?Version=<%=Config.Version%>"></script>
+<link href="<%=scriptPath%>Script/jquery.layout/jquery.layout.css?Version=<%=Config.Version%>" type="text/css"
 	rel="stylesheet" />
 <script type="text/javascript"
-	src="<%=Config.ScriptPath%>Script/dhtmlxtree/dhtmlxcommon.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/dhtmlxtree/dhtmlxtree.js?Version=<%=Config.Version%>"></script>
+	src="<%=scriptPath%>Script/jquery.layout/jquery.layout.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.cookie.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.hoverintent.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.contextmenu.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.float.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.swfobject.js?Version=<%=Config.Version%>"></script>
 <script type="text/javascript"
-	src="<%=Config.ScriptPath%>Script/dhtmlxtree/dhtmlxtree_ed.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/ofc/json2.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/ofc/swfobject.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/ofc/ofc.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/ofc/open_flash_chart.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/ofc/swfobject.helper.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/jquery.soufunlab.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/calendar2.js?Version=<%=Config.Version%>"></script>
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/base64.js?Version=<%=Config.Version%>"></script>
-<script src="<%=Config.ScriptPath%>Script/jquery.uploadify/jquery.uploadify.js?Verson=<%=Config.Version%>"></script>
-<script src="<%=Config.ScriptPath%>easy-ui/jquery.easyui.min.js?Verson=<%=Config.Version%>"></script>
+	src="<%=scriptPath%>Script/jquery.tinymce/jquery.tinymce.js?Version=<%=Config.Version%>"></script>
+<link href="<%=scriptPath%>Script/dhtmlxtree/dhtmlxtree.css?Version=<%=Config.Version%>" type="text/css"
+	rel="stylesheet" />
+<script type="text/javascript"
+	src="<%=scriptPath%>Script/dhtmlxtree/dhtmlxcommon.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/dhtmlxtree/dhtmlxtree.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript"
+	src="<%=scriptPath%>Script/dhtmlxtree/dhtmlxtree_ed.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/ofc/json2.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/ofc/swfobject.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/ofc/ofc.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/ofc/open_flash_chart.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/ofc/swfobject.helper.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/jquery.soufunlab.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/calendar2.js?Version=<%=Config.Version%>"></script>
+<script type="text/javascript" src="<%=scriptPath%>Script/base64.js?Version=<%=Config.Version%>"></script>
+<script src="<%=scriptPath%>Script/jquery.uploadify/jquery.uploadify.js?Verson=<%=Config.Version%>"></script>
+<script src="<%=scriptPath%>easy-ui/jquery.easyui.min.js?Verson=<%=Config.Version%>"></script>
 <link href="http://js.soufunimg.com/zbs/newhouse/css/sfpc_base.css" type="text/css" rel="stylesheet">
-<link href="<%=Config.ScriptPath%>Css/loading.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
-<link href="<%=Config.ScriptPath%>Css/Site.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
-<link href="<%=Config.ScriptPath%>easy-ui/easyui.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
+<link href="<%=scriptPath%>Css/loading.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
+<link href="<%=scriptPath%>Css/Site.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
+<link href="<%=scriptPath%>easy-ui/easyui.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css" />
 <style type="text/css">
 .btnGetYanZhengMa { /*width: 100px;*/
 	
@@ -103,14 +102,14 @@
 	<div class="main_1200 tf">
 		<div class="header clearfix">
 			<div class="logo fl">
-				<img src="<%=Config.ScriptPath%>Image/logo.png" width="177" height="53">
+				<img src="<%=scriptPath%>Image/logo.png" width="177" height="53">
 			</div>
 			<span class="spe fl">|</span>
 			<p class="fl"><%=Config.TitlePrefix%></p>
 		</div>
 		<div class="loading_box pr">
 			<div class="house fl">
-				<img src="<%=Config.ScriptPath%>Image/house.png" alt="" class="vm" />
+				<img src="<%=scriptPath%>Image/house.png" alt="" class="vm" />
 			</div>
 			<div class="loading_nr fl">
 				<div class="loading_inf">
@@ -138,10 +137,10 @@
 				</div>
 			</div>
 			<div class="house_bg">
-				<img src="<%=Config.ScriptPath%>Image/house_bg.png">
+				<img src="<%=scriptPath%>Image/house_bg.png">
 			</div>
 			<div class="tree">
-				<img src="<%=Config.ScriptPath%>Image/tree.png">
+				<img src="<%=scriptPath%>Image/tree.png">
 			</div>
 		</div>
 		<div class="footer">
@@ -205,7 +204,7 @@
 							}
 							
 							data = {
-								Email : encodeURI(Base64_Encrypt(email + "<%= Config.EmailSuffix%>" )),
+								Email : encodeURI(Base64_Encrypt(email + "@<%= Config.EmailSuffix%>" )),
 								Password : encodeURI(Base64_Encrypt(password)),//密码加密传输
 								Random : $.date.now()
 							};

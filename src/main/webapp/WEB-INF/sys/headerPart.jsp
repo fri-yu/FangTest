@@ -33,9 +33,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </script>
 
 
-<link href="<%=Config.ScriptPath%>/Css/newhouse_header.css?Version=<%=Config.Version%>" rel="stylesheet" />
-<link href="<%=Config.ScriptPath%>/Css/newHouse_nav.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="<%=Config.ScriptPath%>Script/base64.js?Version=<%=Config.Version%>"></script>
+<link href="<%=basePath+Config.ScriptPath%>/Css/newhouse_header.css?Version=<%=Config.Version%>" rel="stylesheet" />
+<link href="<%=basePath+Config.ScriptPath%>/Css/newHouse_nav.css?Version=<%=Config.Version%>" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<%=basePath+Config.ScriptPath%>Script/base64.js?Version=<%=Config.Version%>"></script>
 <div class="ershou_nav clearfix">
 	<div class="logo_nav jfl">
 		<img style="margin-top:6px" src="../Resource/Image/logow3.png">
