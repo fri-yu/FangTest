@@ -38,9 +38,9 @@
 			</div>
 		 </text>
 	</div>
-<jsp:include page="FooterPart.jsp" flush="true" />
+	<jsp:include page="FooterPart.jsp" flush="true" />
 
-		<div class="ui-layout-center" style="overflow: hidden;">
+	<div class="ui-layout-center" style="overflow: hidden;">
 			<div id="divFullScreen" title="最大" class="slfullscreenbutton"></div>
 			<div id="tabs" style="height: 100%; width: 100%;">
 				<div id="tabsHeader" class="sltabsheader">
