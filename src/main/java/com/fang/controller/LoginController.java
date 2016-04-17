@@ -37,10 +37,10 @@ public class LoginController {
 			HttpServletResponse response, LoginEnterIn model) {
 		loginService.login(request, response, model);
 		// System.out.println("111111111111");
-		System.out.println("enter.do" + model);
-		System.out.println("enter.do" + model.getEmail());
-		System.out.println("enter.do" + model.getPassword());
-		System.out.println("enter.do" + model.getPhone());
+		System.out.println("enter.do:" + model);
+		System.out.println("enter.do:" + model.getEmail());
+		System.out.println("enter.do:" + model.getPassword());
+		System.out.println("enter.do:" + model.getPhone());
 
 		return "{\"success\":1}";
 	}
