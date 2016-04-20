@@ -8,8 +8,13 @@
 		<result column="username" property="userName" />
 		<result column="password" property="passWord" />
 	</resultMap>
-	<select id="getList" resultType="String">
+	<select id="getData" resultType="String">
 		select top
 		10 newcode from userandprojmaintable
+	</select>
+	<select id="getList" resultType="com.fang.bean.CustomerFollowUpListModel">
+		select top
+		10 id as No,City,RealName,Phone,ProjName,NewCode,HuxingID  from userandprojmaintable
+		where id>1000
 	</select>
 </mapper>
