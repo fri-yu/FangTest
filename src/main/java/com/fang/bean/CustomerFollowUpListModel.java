@@ -1,53 +1,61 @@
 package com.fang.bean;
 
 public class CustomerFollowUpListModel {
-	private String No;
-	private String City;
-	private String RealName;
-	private String Phone;
-	private String ProjName;
-	private String NewCode;
-	private String HuxingInfo;
+	private String no;
+	private String city;
+	private String realName;
+	private String phone;
+	private String projName;
+	private String newCode;
+	private String huxingID;
+	private String huxingInfo;
 	public String getNo() {
-		return No;
+		return no;
 	}
 	public void setNo(String no) {
-		No = no;
+		this.no = no;
 	}
 	public String getCity() {
-		return City;
+		return city;
 	}
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 	public String getRealName() {
-		return RealName;
+		return realName;
 	}
 	public void setRealName(String realName) {
-		RealName = realName;
+		this.realName = realName;
 	}
 	public String getPhone() {
-		return Phone;
+		return phone;
 	}
 	public void setPhone(String phone) {
-		Phone = phone;
+		this.phone = phone;
 	}
 	public String getProjName() {
-		return ProjName;
+		return projName;
 	}
 	public void setProjName(String projName) {
-		ProjName = projName;
+		this.projName = projName;
 	}
 	public String getNewCode() {
-		return NewCode;
+		return newCode;
 	}
 	public void setNewCode(String newCode) {
-		NewCode = newCode;
+		this.newCode = newCode;
+	}
+	public String getHuxingID() {
+		return huxingID;
+	}
+	public void setHuxingID(String huxingID) {
+		this.huxingID = huxingID;
 	}
 	public String getHuxingInfo() {
-		return HuxingInfo;
+		return huxingInfo;
 	}
 	public void setHuxingInfo(String huxingInfo) {
-		HuxingInfo = huxingInfo;
+		this.huxingInfo = huxingInfo;
 	}
+	
 }

@@ -905,35 +905,35 @@ em {
 							//showColumns: true,
 							minimumCountColumns : 4,
 							columns : [ {
-								field : 'No',
+								field : 'no',
 								title : '序号',
 								align : 'center'
 							}, {
 								class : '_minWidth65',
-								field : 'City',
+								field : 'city',
 								title : '城市',
 								align : 'center'
 							}, {
-								field : 'RealName',
+								field : 'realName',
 								title : '客户姓名',
 								align : 'center'
 							}, {
-								field : 'Phone',
+								field : 'phone',
 								title : '客户手机',
 								align : 'center'
 							}, {
 								class : '_minWidth152',
-								field : 'ProjName',
+								field : 'projName',
 								title : '楼盘名称',
 								align : 'center'
 							}, {
 								class : '_minWidth100',
-								field : 'NewCode',
+								field : 'newCode',
 								title : '楼盘ID',
 								align : 'center'
 							}, {
 								class : '_minWidth180',
-								field : 'HuxingInfo',
+								field : 'huxingInfo',
 								title : '户型信息',
 								align : 'center'
 							}, {
