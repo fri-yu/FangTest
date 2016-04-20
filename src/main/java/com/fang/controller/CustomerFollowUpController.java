@@ -35,6 +35,7 @@ public class CustomerFollowUpController {
 		for (String str : service.getData()) {
 			System.out.println("data:" + str);
 		}
+		
 		return mav;
 	}
 
@@ -51,9 +52,11 @@ public class CustomerFollowUpController {
 		m1.setHuxingInfo("HuxingInfo2");
 		AjaxJsonBean<CustomerFollowUpListModel> m = new AjaxJsonBean<CustomerFollowUpListModel>();
 		m.Message = "Success";
-		m.RowsCount = 1;
+		
 		m.Rows = new ArrayList<CustomerFollowUpListModel>();
 		m.Rows.add(m1);
+		m.Rows.addAll(service.getList());
+		m.RowsCount = m.Rows.size();
 		return JSON.toJSON(m).toString();
 	}
 
