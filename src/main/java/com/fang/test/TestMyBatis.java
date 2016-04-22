@@ -17,24 +17,24 @@ import com.fang.service.MyService;
 // 表示继承了SpringJUnit4ClassRunner类
 @ContextConfiguration(locations = { "classpath:spring-mybatis.xml" })
 public class TestMyBatis {
-	private static Logger logger = Logger.getLogger(TestMyBatis.class);
-	@Resource
-	private IUserService userService = null;
-
-	@Resource
-	private MyService myServicess = null;
-
-	@Test
-	public void test1() {
-		System.out.println("myService-------------------" + myServicess);
-		for (User u : myServicess.getList()) {
-			System.out.println("直接拿service" + u);
-		}
-		User user = userService.getUserById(1);
-
-		System.out.println("user--from dao-------------------" + user);
-		// System.out.println(user.getUserName());
-		// logger.info("值："+user.getUserName());
-		logger.info(JSON.toJSONString(user));
-	}
+//	private static Logger logger = Logger.getLogger(TestMyBatis.class);
+//	@Resource
+//	private IUserService userService = null;
+//
+//	@Resource
+//	private MyService myServicess = null;
+//
+//	@Test
+//	public void test1() {
+//		System.out.println("myService-------------------" + myServicess);
+//		for (User u : myServicess.getList()) {
+//			System.out.println("直接拿service" + u);
+//		}
+//		User user = userService.getUserById(1);
+//
+//		System.out.println("user--from dao-------------------" + user);
+//		// System.out.println(user.getUserName());
+//		// logger.info("值："+user.getUserName());
+//		logger.info(JSON.toJSONString(user));
+//	}
 }
