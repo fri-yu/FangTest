@@ -2,9 +2,9 @@ package com.fang.test;
 
 import javax.annotation.Resource;
 
-import org.junit.Test;
+//import org.junit.Test;
 import org.apache.log4j.Logger;
-import org.junit.runner.RunWith;
+//import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
